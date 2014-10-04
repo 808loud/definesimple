@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Site Title
+title: Define Simple
 locale: en_US
-description: Describe your website here.
+description: David Monson's personal portfolio
 logo: site-logo.png
 search: true
 url: 
@@ -32,13 +32,13 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Your Name
+  name: David Monson
   avatar: bio-photo.jpg
-  email: you@email.com
+  email: david@808loud.com
   disqus-shortname:
-  twitter: #username
-  facebook: #username
-  github: #username
+  twitter: david_monson
+  facebook: david.monson
+  github: @808loud
   stackexchange: #http://stackoverflow.com/users/123456/username
   linkedin: #username
   instagram: #username
