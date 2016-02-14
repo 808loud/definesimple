@@ -1,0 +1,246 @@
+/*
+
+			 `/ymNMMNmy+`     -sdNMMMmh+.     .ohmMMMNds:`        
+			.mMMmhhyhmMMm:`  sMMNdhyhmMMN/`  +MMNdhyhdNMMy.`      
+			yMMdo:-..-yMMh:`oMMms/-..-oMMN/.`MMMs+-..-:mMMo.`     
+		 `+MMmo-`  `yMMh:-NMMs/.    `yMMh:.dMMh/.   -NMNo-`     
+			`+mMMmhsohMMh+-:MMN+-`    `+MMm/.-yNMMmyoomMNy/.      
+			.yNMmdmNNMMNy:.:MMN+.      /MMm/./dMNmdmNMMMdo-`      
+		 .mMNy+:::+sdMMd::MMM+-      oMMm/sMMms/:::+yNMMs.`     
+		 oMMm+-`  ``-NMMs:dMMy-`    `dMMy/mMMy/.   `.+MMN/.     
+		 :NMMy/.```-sMMNo:/NMNs:```-hMMm+:sMMNo-```.:dMMd/.     
+		 `:hNMNmddmNMNdo:.`/dNMNddmNMNdo:..omNMNdddmMMmh+-`     
+			`./oyhddhys+/-`  `./shhddhso:.`  `-+syhddhys+:.`      
+yyy+`    `..--:oyhdddhs/-``.oddh:.`     ohhdddddddhhso:.    
++dMm:.      .smNmhyssydNNh:`:sMMo-`    `NMdyyNMmyysyhdNmy-` 
+`yMm/.     .mMms+:-...-/yMN+.-MMs:`    `NMh/:mMd/-...-/dMm:`
+`sMm/.     yMNo:.      `.hMN/:MMs:`    `NMy:.dMd/.    `-NMh-
+`sMm/.    `dMm/.        `sMM+/MMs:`    `NMy:.dMd/.     `mMd/
+`sMm/.    `+MMs-`       -mMd+:MMy:`    .NMy:.dMd/.     /MMy:
+`sMm/.   /s/sMMh/`    .oNMdo:.hMN+.   .yMNo:.dMd/.   -sNMh+-
+`sMMmddddNMy//ymMNmddNMNds/-``.smMNddmNNdo:.`dMNmddmNNmds/-`
+ ./osoooooo/-`.-/osysso/:-`    `-/osyso+:-` `-+osooo++/:.`  
+
+ lovingly hand-coded by: David Monson 
+                         david@808loud.com
+*/
+
+html, body {
+	font-size: 22px;
+	line-height: 1.45em;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 5px;
+	max-width: 570px;
+}
+
+section { 
+	margin: 5em 0;
+}
+
+ul {
+	display: table;
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+li {
+	display: table-row;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Open Sans', Arial, sans-serif;
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+a, a:link, a:visited {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #328ebd;
+	display: inline; 
+}
+
+a:hover, a:active  {
+	border-bottom-style: dashed;
+}
+
+.fadein {
+    opacity:0;
+}
+
+/* Quotes */
+
+p.quote {
+	display: inline-block;
+}
+
+blockquote cite {
+	position: relative;
+}
+
+blockquote, blockquote cite,
+blockquote.blockquote-reverse, blockquote.blockquote-reverse cite {
+	transition: all 0.2s ease;
+}
+
+blockquote:hover, blockquote.blockquote-reverse:hover {
+	border-color: #d0e8f4;
+}
+
+blockquote.blockquote-reverse:hover cite {
+	padding-right: 4px;
+}	
+
+blockquote:hover cite {
+	padding-left: 4px;
+}
+
+p#monson {
+	max-width: 466px;
+}
+
+ p#einstein {
+	max-width: 452px;
+}
+   
+/* Portfolio */
+
+#portfolio ul li {
+	width:182px;
+	height:182px;
+	float:left;
+	margin:0 4px 4px 0;
+	border:1px solid #ccc; 
+}
+
+#portfolio ul li a {
+	display: block; 
+	width:180px;
+	height:180px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	border: none;
+}
+
+#portfolio ul li:hover a {
+	background-position: 0px -180px !important; 
+	border: none;
+}
+
+#MSP a     { background-image: url('../img/thumb/msp-blogs.png'); }
+
+#BMTN a    { background-image: url('../img/thumb/bmtn.png'); }
+
+#YRB a     { background-image: url('../img/thumb/yrb.png'); }
+
+#secrets a { background-image: url('../img/thumb/secrets.png'); }
+
+#BT4BH a   { background-image: url('../img/thumb/bt4bh.png'); }
+
+#mnbeer a  { background-image: url('../img/thumb/mnbeeractivists.png'); }
+
+#HHBL a    { background-image: url('../img/thumb/HHBL.png'); }
+
+#web808 a  { background-image: url('../img/thumb/808.png'); }
+
+#RAVE a    { background-image: url('../img/thumb/rave.png'); }
+
+#ITMX a    { background-image: url('../img/thumb/intermix.png'); }
+   
+/* Contact */
+
+#contact ul {
+	margin-bottom: 2em;
+}
+
+#contact ul li {
+	display: block;
+	padding: 0.5em 0;
+	cursor: pointer;
+}
+
+#contact ul li a span {
+	display: inline;
+}
+
+#contact ul li a img {
+	display: inline;
+	float: left;
+	padding-right: 8px;
+}
+
+#contact ul li a,
+#contact ul li a img {
+	transition: all 0.2s ease;
+}
+
+#contact ul li:hover a {
+	color: #328ebd;
+}
+
+#contact ul li:hover a img {
+	padding-right: 18px;
+}
+/* =====================
+   Responsive styles
+======================== */
+
+
+/* iPad */
+@media screen and (max-width: 590px) and (min-width: 480px) {
+
+	html, body {
+		font-size: 20px;
+	}
+
+	#portfolio ul li {
+		width: 146px;
+		height: 146px;
+	}
+
+	#portfolio ul li a {
+		width: 144px;
+		height: 144px;
+		background-size: 144px 288px;
+	}
+
+	#portfolio ul li:hover a {
+		background-position: 0px -144px !important; 
+	}
+}
+
+/* iPhone */
+@media screen and (max-width: 480px) {
+
+	html, body {
+		font-size: 18px;
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+
+	#portfolio ul li {
+		width: 137px;
+		height: 137px;
+	}
+
+	#portfolio ul li a {
+		width: 135px;
+		height: 135px;
+		background-size: 135px 270px;
+	}
+
+	#portfolio ul li:hover a {
+		background-position: 0px -135px !important; 
+	}
+}
