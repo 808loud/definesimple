@@ -1,4 +1,0 @@
-definesimple
-============
-
-Personal portfolio page
