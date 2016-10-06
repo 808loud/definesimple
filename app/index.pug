@@ -1,21 +1,70 @@
 extends layouts/default
 
 block content
-  .jumbotron
-    h1 'Allo, 'Allo!
-    p.lead Always a pleasure scaffolding your apps.
-    p: a.btn.btn-lg.btn-success(href='#') Splendid!
+  
+  section#home.ma3
+    h1 Hi, I&rsquo;m David Monson.
+    p(style='max-width: 480px;')
+      | I am a creative, analytical, and movitated citizen of the web. I believe simpler is better.
+    blockquote.blockquote
+      p#einstein.quote
+        | Everything should be made as simple as possible, but not simpler.
+        br
+        cite &ndash; Albert Einstein
+    p
+      | Welcome to my portfolio site. Below are some websites that I&apos;ve built or worked on.
 
-  .row.marketing
-    .col-lg-6
-      h4 HTML5 Boilerplate
-      p HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  section#portfolio.ma3
+    h2 Portfolio
+    a#BMTN(href='http://bringmethenews.com/', target='_blank', title='BringMeTheNews')
+    a#MSP(href='http://mspmag.com/', target='_blank', title='Mpls.St.Paul Magazine Blogs')
+    a#ITMX(href='http://intermixbev.com/', target='_blank', title='Intermix Beverage')
+    a#secrets(href='http://www.secretsofthecity.com/', target='_blank', title='Secrets of the City')
+    a#web808(href='http://808loud.com/', target='_blank', title='808 Loud, LLC')
+    a#mnbeer(href='http://mnbeeractivists.com/', target='_blank', title='Minnesota Beer Activists')
+    a#YRB(href='http://yearroundbrown.com/', target='_blank', title='Year Round Brown Tanning Salons')
+    a#BT4BH(href='http://betterhealth.mckesson.com/', target='_blank', title='McKesson Better Thinking for Better Health')
+    a#HHBL(href='http://hhbestlab.com/', target='_blank', title='Haldeman-Homme, Inc. | HH Best Lab')
 
-      h4 Sass
-      p Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+  section#about
+    h2 About me
+    section
+      h3 I
+      ul.list-unstyled
+        li avoid clutter
+        li admire Helvetica
+        li appreciate perfection
+        li prefer the DIY approach
+        li occasionally dream in code
+        li love vinyl, guitars, and mopeds
+        li believe simpler is better.
 
-      h4 Bootstrap
-      p Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
-
-      h4 Modernizr
-      p Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.
+  section#contact
+    h2 Contact me
+    ul.list-unstyled
+      li
+        a(target='_blank', href='mailto:david@808loud.com')
+          img(src='images/email_32.png', alt='Email')
+          span david@808loud.com
+      li
+        a(target='_blank', href='http://www.linkedin.com/in/davidmonson808')
+          img(src='images/linkedin_32.png', alt='LinkedIn')
+          span Connect
+      li
+        a(target='_blank', href='http://www.facebook.com/david.monson')
+          img(src='images/facebook_32.png', alt='Facebook')
+          span Friend
+      li
+        a(target='_blank', href='https://twitter.com/david_monson')
+          img(src='images/twitter_32.png', alt='email')
+          span @david_monson
+    blockquote.blockquote-reverse
+      p#monson.quote
+        | To&nbsp;simplify&nbsp;means
+        strike to&nbsp;eliminate&nbsp;the unnecessary&nbsp;so&nbsp;that
+        |  the&nbsp;necessary&nbsp;may&nbsp;speak.
+        br
+        cite
+          strike &ensp;Hans Hofmann
+          br
+          |  &ndash; David Monson

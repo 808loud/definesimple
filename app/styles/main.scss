@@ -1,93 +1,207 @@
-$icon-font-path: '../fonts/';
+// $icon-font-path: '../fonts/';
 
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
+html, body {
+  box-sizing: border-box;
+  font-size: 22px;
+  line-height: 1.45em;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+// section {
+//   display: block;
+//   margin: 5em 0;
+// }
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-weight: 700;
+
+  & p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+}
+
+a,
+a:link,
+a:visited {
   color: #000;
-  padding: 0.2em 0;
+  text-decoration: none;
+  border-bottom: 1px solid #328ebd;
+  display: inline;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+a:hover,
+a:active  {
+  border-bottom-style: dashed;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.fadein {
+  opacity:0;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
+/* Quotes */
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+p.quote {
+  display: inline-block;
+}
+
+blockquote cite {
+  position: relative;
+}
+
+blockquote,
+blockquote cite,
+blockquote.blockquote-reverse,
+blockquote.blockquote-reverse cite {
+  transition: all 0.2s ease;
+}
+
+blockquote:hover,
+blockquote.blockquote-reverse:hover {
+  border-color: #d0e8f4;
+}
+
+blockquote.blockquote-reverse:hover cite {
+  padding-right: 4px;
+}
+
+blockquote:hover cite {
+  padding-left: 4px;
+}
+
+p#monson {
+  max-width: 466px;
+}
+
+p#einstein {
+  max-width: 452px;
+}
+
+/* Portfolio */
+
+#portfolio {
+  a {
+  	// display: inline-block;
+    float: left;
+    margin: 0 4px 4px 0;
+    border: 1px solid #ccc;
+  	width:  180px;
+  	height: 180px;
+  	background-position: top left;
+  	background-repeat: no-repeat;
+  	border: none;
+    &:hover {
+      background-position: 0px -180px !important;
+      border: none;
+    }
   }
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+#MSP     { background-image: url('../images/thumb/msp-blogs.png'); }
+#BMTN    { background-image: url('../images/thumb/bmtn.png'); }
+#YRB     { background-image: url('../images/thumb/yrb.png'); }
+#secrets { background-image: url('../images/thumb/secrets.png'); }
+#BT4BH   { background-image: url('../images/thumb/bt4bh.png'); }
+#mnbeer  { background-image: url('../images/thumb/mnbeeractivists.png'); }
+#HHBL    { background-image: url('../images/thumb/HHBL.png'); }
+#web808  { background-image: url('../images/thumb/808.png'); }
+#RAVE    { background-image: url('../images/thumb/rave.png'); }
+#ITMX    { background-image: url('../images/thumb/intermix.png'); }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
+/* Contact */
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+#contact {
+  ul {
+    margin-bottom: 2em;
+
+    li {
+      display: block;
+      padding: 0.5em 0;
+      cursor: pointer;
+      a {
+        span {
+          display: inline;
+        }
+
+        img {
+          display: inline;
+          float: left;
+          padding-right: 8px;
+        }
+      }
+    }
   }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
+#contact ul li a,
+#contact ul li a img {
+  transition: all 0.2s ease;
+}
+
+#contact ul li:hover a {
+  color: #328ebd;
+}
+
+#contact ul li:hover a img {
+  padding-right: 18px;
+}
+
+/* =====================
+   Responsive styles
+======================== */
+
+/* iPad */
+@media screen and (max-width: 590px) and (min-width: 480px) {
+
+  html, body {
+    font-size: 20px;
+  }
+
+  #portfolio ul li {
+    width: 146px;
+    height: 146px;
+  }
+
+  #portfolio ul li a {
+    width: 144px;
+    height: 144px;
+    background-size: 144px 288px;
+  }
+
+  #portfolio ul li:hover a {
+    background-position: 0px -144px !important;
   }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
+/* iPhone */
+@media screen and (max-width: 480px) {
+
+  html, body {
+    font-size: 18px;
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
+  h1 {
+    font-size: 26px;
   }
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
+  #portfolio ul li {
+    width: 137px;
+    height: 137px;
   }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+  #portfolio ul li a {
+    width: 135px;
+    height: 135px;
+    background-size: 135px 270px;
+  }
+
+  #portfolio ul li:hover a {
+    background-position: 0px -135px !important;
   }
 }

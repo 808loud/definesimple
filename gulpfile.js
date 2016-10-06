@@ -95,7 +95,7 @@ gulp.task('fonts', () => {
 
 gulp.task('extras', () => {
   return gulp.src([
-    'app/*.*',
+    'app/*',
     '!app/*.html',
     '!app/*.pug'
   ], {
