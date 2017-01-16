@@ -1,70 +1,115 @@
 extends layouts/default
 
 block content
-  
-  section#home.ma3
-    h1 Hi, I&rsquo;m David Monson.
-    p(style='max-width: 480px;')
-      | I am a creative, analytical, and movitated citizen of the web. I believe simpler is better.
+
+  section#home.m-a-3
+    h1.display-3 Hi, I'm David
+    //- h2.h4 Welcome to my portfolio site.
     blockquote.blockquote
-      p#einstein.quote
-        | Everything should be made as simple as possible, but not simpler.
-        br
-        cite &ndash; Albert Einstein
-    p
-      | Welcome to my portfolio site. Below are some websites that I&apos;ve built or worked on.
-
-  section#portfolio.ma3
-    h2 Portfolio
-    a#BMTN(href='http://bringmethenews.com/', target='_blank', title='BringMeTheNews')
-    a#MSP(href='http://mspmag.com/', target='_blank', title='Mpls.St.Paul Magazine Blogs')
-    a#ITMX(href='http://intermixbev.com/', target='_blank', title='Intermix Beverage')
-    a#secrets(href='http://www.secretsofthecity.com/', target='_blank', title='Secrets of the City')
-    a#web808(href='http://808loud.com/', target='_blank', title='808 Loud, LLC')
-    a#mnbeer(href='http://mnbeeractivists.com/', target='_blank', title='Minnesota Beer Activists')
-    a#YRB(href='http://yearroundbrown.com/', target='_blank', title='Year Round Brown Tanning Salons')
-    a#BT4BH(href='http://betterhealth.mckesson.com/', target='_blank', title='McKesson Better Thinking for Better Health')
-    a#HHBL(href='http://hhbestlab.com/', target='_blank', title='Haldeman-Homme, Inc. | HH Best Lab')
-
-  section#about
-    h2 About me
-    section
-      h3 I
-      ul.list-unstyled
-        li avoid clutter
-        li admire Helvetica
-        li appreciate perfection
-        li prefer the DIY approach
-        li occasionally dream in code
-        li love vinyl, guitars, and mopeds
-        li believe simpler is better.
-
-  section#contact
-    h2 Contact me
-    ul.list-unstyled
-      li
-        a(target='_blank', href='mailto:david@808loud.com')
-          img(src='images/email_32.png', alt='Email')
-          span david@808loud.com
-      li
-        a(target='_blank', href='http://www.linkedin.com/in/davidmonson808')
-          img(src='images/linkedin_32.png', alt='LinkedIn')
-          span Connect
-      li
-        a(target='_blank', href='http://www.facebook.com/david.monson')
-          img(src='images/facebook_32.png', alt='Facebook')
-          span Friend
-      li
-        a(target='_blank', href='https://twitter.com/david_monson')
-          img(src='images/twitter_32.png', alt='email')
-          span @david_monson
-    blockquote.blockquote-reverse
-      p#monson.quote
-        | To&nbsp;simplify&nbsp;means
-        strike to&nbsp;eliminate&nbsp;the unnecessary&nbsp;so&nbsp;that
-        |  the&nbsp;necessary&nbsp;may&nbsp;speak.
+      p.text-nowrap
+        | To simplify means<br>
+        strike to eliminate the unnecessary so that<br>
+        |  the necessary may speak.
         br
         cite
           strike &ensp;Hans Hofmann
           br
           |  &ndash; David Monson
+
+  section#portfolio.clearfix.m-a-3
+    h2 Portfolio
+    .row
+      .card-columns
+        .card.col-xs
+          img.card-img-top.img-fluid(src='http://placekitten.com/600/300')
+          .card-block
+            h4.card-title BringMeTheNews
+            p.card-text I did stuff
+            a.btn.btn-primary(href='http://bringmethenews.com/' target='_blank') See more
+        .card.col-xs
+          img.card-img-top
+          .card-block
+            h4.card-title Mpls.St.Paul Magazine Blogs
+            p.card-text I did other stuff
+            a.btn.btn-primary(href='http://mspmag.com/' target='_blank') See more
+        .card.col-xs
+          img.card-img-top
+          .card-block
+            h4.card-title Intermix Beverage
+            p.card-text I made stuff
+            a.btn.btn-primary(href='http://intermixbev.com/' target='_blank') See more
+        .card.col-xs
+          img.card-img-top
+          .card-block
+            h4.card-title Secrets of the City
+            p.card-text Yeah
+            a.btn.btn-primary(href='http://ww w.secretsofthecity.com/' target='_blank') See more
+        .card.col-xs
+          img.card-img-top
+          .card-block
+            h4.card-title 808 Loud
+            p.card-text My site
+            a.btn.btn-primary(href='http://808loud.com/' target='_blank') See more
+        .card.col-xs
+          img.card-img-top
+          .card-block
+            h4.card-title Minnesota Beer Activists
+            p.card-text My site
+            a.btn.btn-primary(href='http://mnbeeractivists.com/' target='_blank') See more
+        .card.col-xs
+          img.card-img-top
+          .card-block
+            h4.card-title Year Round Brown Tanning Salons
+            p.card-text My site
+            a.btn.btn-primary(href='http://yearroundbrown.com/' target='_blank') See more
+        .card.col-xs
+          img.card-img-top
+          .card-block
+            h4.card-title McKesson Better Thinking for Better Health
+            p.card-text My site
+            a.btn.btn-primary(href='http://betterhealth.mckesson.com/' target='_blank') See more
+        .card.col-xs
+          img.card-img-top
+          .card-block
+            h4.card-title Haldeman-Homme, Inc. | HH Best Lab
+            p.card-text My site
+            a.btn.btn-primary(href='http://hhbestlab.com/' target='_blank') See more
+
+  section#about.m-a-3
+    h2 About me
+    section
+      .container
+        .row
+          .col-xs-1.display-1.font-family-serif I
+          .col-xs-11
+            ul.list-unstyled
+              //- li avoid clutter
+              li admire Helvetica
+              li appreciate perfection
+              li prefer the DIY approach
+              li occasionally dream in code
+              li love vinyl, guitars, and mopeds
+              li believe simpler is better
+
+
+  section#contact.m-a-3
+    h2 Contact me
+    form(action='https://formspree.io/david@808loud.com' method='POST')
+      .form-group
+        label.sr-only(for='name') Name
+        input.form-control(type='text' name='name' placeholder='Name')
+      .form-group
+        label.sr-only(for='email') Email address
+        input.form-control(type='email' name='_replyto' placeholder='Email address')
+      .form-group
+        label.sr-only(for='message') Message
+        textarea.form-control(rows='3' name='message' placeholder='Message')
+      input(type='text', name='_gotcha', style='display:none')
+      .form-group
+        button.btn.btn-primary(type="submit") Submit
+
+    blockquote.blockquote
+      p.text-nowrap
+        | Everything should be made as simple as possible, but not simpler.
+        br
+        cite &ndash; Albert Einstein

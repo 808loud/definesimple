@@ -5,7 +5,8 @@ html.no-js(lang='')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title David Monson's Portfolio
-    // Place favicon.ico in the root directory
+
+    link(href='https://fonts.googleapis.com/css?family=Muli|Poppins' rel='stylesheet')
 
     // build:css styles/vendor.css
     // bower:css
@@ -13,7 +14,7 @@ html.no-js(lang='')
     // endbuild
 
     // build:css styles/main.css
-    link(rel='stylesheet', href='styles/main.css')
+    link(rel='stylesheet' href='styles/main.css')
     // endbuild
 
   body
@@ -21,24 +22,24 @@ html.no-js(lang='')
       p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     <![endif]-->
 
-    header
-      nav.navbar.navbar-light.navbar-fixed-top
-        button.navbar-toggler.hidden-sm-up(type='button', data-toggle='collapse', data-target='#mainnav', aria-controls='mainnav', aria-expanded='false', aria-label='Toggle navigation')
-          | &#9776;
-        #mainnav.collapse.navbar-toggleable-xs
-          ul.nav.navbar-nav
-            a.nav-item.active.nav-link(href='#')
-              | Home
-              span.sr-only (current)
-            a.nav-item.nav-link(href='#portfolio') Portfolio
-            a.nav-item.nav-link(href='#about') About
-            a.nav-item.nav-link(href='#contact') Contact
-
     .container
+      //- header
+      //-   nav.navbar.navbar-light
+      //-     button.navbar-toggler.hidden-sm-up(type='button', data-toggle='collapse', data-target='#mainnav', aria-controls='mainnav', aria-expanded='false', aria-label='Toggle navigation')
+      //-       | &#9776;
+      //-     #mainnav.collapse.navbar-toggleable-xs
+      //-       ul.nav.navbar-nav
+      //-         a.nav-item.active.nav-link(href='#')
+      //-           | Home
+      //-           span.sr-only (current)
+      //-         a.nav-item.nav-link(href='#portfolio') Portfolio
+      //-         a.nav-item.nav-link(href='#about') About
+      //-         a.nav-item.nav-link(href='#contact') Contact
+
       block content
 
-    footer.footer
-      // p &hearts;
+      footer.footer
+        // p &hearts;
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.

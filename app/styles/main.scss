@@ -1,207 +1,47 @@
-// $icon-font-path: '../fonts/';
-
+@import "custom";
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
-html, body {
-  box-sizing: border-box;
-  font-size: 22px;
-  line-height: 1.45em;
-  font-family: 'Open Sans', Arial, sans-serif;
-}
+blockquote {
+  transition: all 0.2s ease-in-out;
 
-// section {
-//   display: block;
-//   margin: 5em 0;
-// }
-
-h1, h2, h3, h4, h5, h6 {
-
-  font-weight: 700;
-
-  & p {
-    font-family: 'Open Sans', Arial, sans-serif;
-    margin: 0;
-    margin-bottom: 0.5em;
+  &:hover {
+    border-color: #d0e8f4;
   }
 }
 
-a,
-a:link,
-a:visited {
-  color: #000;
-  text-decoration: none;
-  border-bottom: 1px solid #328ebd;
-  display: inline;
+.font-family-serif {
+  font-family: $font-family-serif;
 }
 
-a:hover,
-a:active  {
-  border-bottom-style: dashed;
+.card {
+  max-width: 20rem;
 }
 
-.fadein {
-  opacity:0;
-}
 
-/* Quotes */
+// Responsive sizes
 
-p.quote {
-  display: inline-block;
-}
-
-blockquote cite {
-  position: relative;
-}
-
-blockquote,
-blockquote cite,
-blockquote.blockquote-reverse,
-blockquote.blockquote-reverse cite {
-  transition: all 0.2s ease;
-}
-
-blockquote:hover,
-blockquote.blockquote-reverse:hover {
-  border-color: #d0e8f4;
-}
-
-blockquote.blockquote-reverse:hover cite {
-  padding-right: 4px;
-}
-
-blockquote:hover cite {
-  padding-left: 4px;
-}
-
-p#monson {
-  max-width: 466px;
-}
-
-p#einstein {
-  max-width: 452px;
-}
-
-/* Portfolio */
-
-#portfolio {
-  a {
-  	// display: inline-block;
-    float: left;
-    margin: 0 4px 4px 0;
-    border: 1px solid #ccc;
-  	width:  180px;
-  	height: 180px;
-  	background-position: top left;
-  	background-repeat: no-repeat;
-  	border: none;
-    &:hover {
-      background-position: 0px -180px !important;
-      border: none;
-    }
+@include media-breakpoint-up(xs) {
+  html {
+    font-size: $font-size-xs;
   }
 }
 
-#MSP     { background-image: url('../images/thumb/msp-blogs.png'); }
-#BMTN    { background-image: url('../images/thumb/bmtn.png'); }
-#YRB     { background-image: url('../images/thumb/yrb.png'); }
-#secrets { background-image: url('../images/thumb/secrets.png'); }
-#BT4BH   { background-image: url('../images/thumb/bt4bh.png'); }
-#mnbeer  { background-image: url('../images/thumb/mnbeeractivists.png'); }
-#HHBL    { background-image: url('../images/thumb/HHBL.png'); }
-#web808  { background-image: url('../images/thumb/808.png'); }
-#RAVE    { background-image: url('../images/thumb/rave.png'); }
-#ITMX    { background-image: url('../images/thumb/intermix.png'); }
-
-/* Contact */
-
-#contact {
-  ul {
-    margin-bottom: 2em;
-
-    li {
-      display: block;
-      padding: 0.5em 0;
-      cursor: pointer;
-      a {
-        span {
-          display: inline;
-        }
-
-        img {
-          display: inline;
-          float: left;
-          padding-right: 8px;
-        }
-      }
-    }
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: $font-size-sm;
   }
 }
 
-#contact ul li a,
-#contact ul li a img {
-  transition: all 0.2s ease;
-}
-
-#contact ul li:hover a {
-  color: #328ebd;
-}
-
-#contact ul li:hover a img {
-  padding-right: 18px;
-}
-
-/* =====================
-   Responsive styles
-======================== */
-
-/* iPad */
-@media screen and (max-width: 590px) and (min-width: 480px) {
-
-  html, body {
-    font-size: 20px;
-  }
-
-  #portfolio ul li {
-    width: 146px;
-    height: 146px;
-  }
-
-  #portfolio ul li a {
-    width: 144px;
-    height: 144px;
-    background-size: 144px 288px;
-  }
-
-  #portfolio ul li:hover a {
-    background-position: 0px -144px !important;
+@include media-breakpoint-up(md) {
+  html {
+    font-size: $font-size-base;
   }
 }
 
-/* iPhone */
-@media screen and (max-width: 480px) {
-
-  html, body {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
-
-  #portfolio ul li {
-    width: 137px;
-    height: 137px;
-  }
-
-  #portfolio ul li a {
-    width: 135px;
-    height: 135px;
-    background-size: 135px 270px;
-  }
-
-  #portfolio ul li:hover a {
-    background-position: 0px -135px !important;
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: $font-size-lg;
   }
 }
