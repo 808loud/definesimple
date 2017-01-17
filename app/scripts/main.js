@@ -1,3 +1,5 @@
+new WOW().init();
+
 $('body').scrollspy({ target: '.navbar' })
 
 $(window).scroll(function() {
