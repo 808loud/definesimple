@@ -8,22 +8,24 @@ body {
   position: relative;
 }
 
-.navbar.shrink {
-  padding-top: 0;
-  padding-bottom: 0;
-  transition: all 0.3s ease-in-out;
+.navbar {
+  transition: padding 0.3s ease-in-out;
+  &.shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 blockquote {
+  transition: border-color 0.3s ease-in-out;
   &:hover {
     border-color: darken(saturate($blockquote-border-color, 50%), 10%);
-    transition: all 0.3s ease-in-out;
   }
 }
 
 .card {
   transform: scale(0.99);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   &:hover {
     transform: scale(1);
   }
