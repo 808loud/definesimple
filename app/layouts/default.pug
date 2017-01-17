@@ -10,6 +10,7 @@ html.no-js(lang='')
 
     // build:css styles/vendor.css
     // bower:css
+    link(rel='stylesheet' href='/bower_components/animate.css/animate.min.css')
     // endbower
     // endbuild
 
@@ -58,11 +59,13 @@ html.no-js(lang='')
     // endbuild
 
     // build:js scripts/plugins.js
+    // bower:js
     script(src='/bower_components/jquery/dist/jquery.min.js')
     script(src='/bower_components/wow/dist/wow.min.js')
     script(src='/bower_components/bootstrap/js/dist/util.js')
     script(src='/bower_components/bootstrap/js/dist/collapse.js')
     script(src='/bower_components/bootstrap/js/dist/scrollspy.js')
+    // endbower
     // endbuild
 
     // build:js scripts/main.js
