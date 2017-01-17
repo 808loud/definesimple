@@ -1,1 +1,1 @@
-"use strict";new WOW({offset:70}).init(),$("body").scrollspy({target:".navbar"}),$(window).scroll(function(){$(document).scrollTop()>1?$(".navbar").addClass("shrink"):$(".navbar").removeClass("shrink")});
+"use strict";new WOW({live:!1}).init(),$("body").scrollspy({target:".navbar"}),$(window).scroll(function(){$(document).scrollTop()>1?$(".navbar").addClass("shrink"):$(".navbar").removeClass("shrink")});
