@@ -1,4 +1,4 @@
-new WOW().init();
+new WOW({ offset: 70 }).init();
 
 $('body').scrollspy({ target: '.navbar' })
 
