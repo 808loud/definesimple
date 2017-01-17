@@ -2,7 +2,7 @@
   "name": "definesimple-com",
   "private": true,
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.4"
+    "bootstrap": "v4.0.0-alpha.6"
   },
   "devDependencies": {
     "chai": "^3.5.0",
