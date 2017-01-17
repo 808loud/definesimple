@@ -9,14 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-.navbar {
-  transition: padding 0.3s ease-in-out;
-  &.shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-
 blockquote {
   transition: border-color 0.3s ease-in-out;
   &:hover {
@@ -24,22 +16,25 @@ blockquote {
   }
 }
 
-.card {
-  transform: scale(0.99);
-  transition: transform 0.3s ease-in-out;
-  &:hover {
-    transform: scale(1);
+#about {
+  ul {
+    // line-height: 1.1em;
+    // position: relative;
+    // top: -1em;
   }
 }
 
-#about ul {
-  line-height: 1.2em;
-  position: relative;
-  top: 0.9em;
+svg {
+  fill: $brand-primary;
 }
 
-.font-family-serif {
-  font-family: $font-family-serif;
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $font-family-base;
 }
 
 // Responsive sizes
@@ -65,6 +60,13 @@ blockquote {
   }
   .card-columns {
     column-count: 2;
+  }
+  .navbar {
+    transition: padding 0.3s ease-in-out;
+    &.shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 }
 

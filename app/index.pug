@@ -2,10 +2,10 @@ extends layouts/default
 
 block content
 
-  section#home.pt-5
+  section#home.pt-5.pb-3
     h1.pt-5.pt-4.display-2.wow.slideInRight Hi, I'm David
-    h3.display-5.wow.fadeInDown(data-wow-delay="2s") I believe simpler is better
-    blockquote.blockquote.my-3.py-1.wow.fadeInRight(data-wow-delay="4s")
+    h3.display-5.wow.fadeInDown(data-wow-delay='2s') I believe simpler is better
+    blockquote.blockquote.my-3.py-1.wow.fadeInRight(data-wow-delay='3s')
       p.text-nowrap
         | To simplify means<br>
         strike to eliminate the unnecessary so that
@@ -17,15 +17,15 @@ block content
           br
           | &ndash; David Monson
 
-  section#portfolio.clearfix.my-5.py-3.wow.fadeInUp(data-wow-delay='6s')
+  section#portfolio.clearfix.my-5.wow.fadeInUp(data-wow-delay='5s')
     h2.display-4 Portfolio
     .card-columns
       .card.mb-3
         img.card-img-top.img-fluid(src='images/sis-newcase.png')
         .card-block
-          h4.card-title Surgical Information Sciences
+          h5.card-title Surgical Information Sciences
           h6.card-subtitle.mb-2.text-muted Pug
-          ul
+          ul.list-unstyled
             li Bootstrap
             li Material Design
             li HTML &amp; CSS
@@ -33,9 +33,9 @@ block content
       .card.mb-3
         img.card-img-top.img-fluid(src='images/homesforheroes.png')
         .card-block
-          h4.card-title Homes For Heroes®
+          h5.card-title Homes For Heroes®
           h6.card-subtitle.mb-2.text-muted WordPress
-          ul
+          ul.list-unstyled
             li Audit
             li Design
             li PHP, HTML &amp CSS
@@ -45,18 +45,18 @@ block content
       .card.mb-3
         img.card-img-top.img-fluid(src='images/chrlieco.png')
         .card-block
-          h4.card-title Charlie
+          h5.card-title Charlie
           h6.card-subtitle.mb-2.text-muted Nunjucks
-          ul
+          ul.list-unstyled
             li Bootstrap
             li HTML &amp; CSS
           a.card-link(href='http://chrlieco.com/' target='_blank') Visit site
       .card.mb-3
         img.card-img-top.img-fluid(src='images/bringmethenews.png')
         .card-block
-          h4.card-title BringMeTheNews
+          h5.card-title BringMeTheNews
           h6.card-subtitle.mb-2.text-muted WordPress
-          ul
+          ul.list-unstyled
             li CMS Maintenance
             li Feature Design
             li Development
@@ -65,9 +65,9 @@ block content
       .card.mb-3
         img.card-img-top.img-fluid(src='images/northernbrewer.png')
         .card-block
-          h4.card-title Northern Brewer
+          h5.card-title Northern Brewer
           h6.card-subtitle.mb-2.text-muted Magento
-          ul
+          ul.list-unstyled
             li CMS maintainence
             li HTML &amp; CSS
             li Digital Marketing
@@ -75,9 +75,9 @@ block content
       .card.mb-3
         img.card-img-top.img-fluid(src='images/midwestsupplies.png')
         .card-block
-          h4.card-title Midwest Supplies
+          h5.card-title Midwest Supplies
           h6.card-subtitle.mb-2.text-muted Magento
-          ul
+          ul.list-unstyled
             li CMS maintainence
             li HTML &amp; CSS
             li Digital Marketing
@@ -85,9 +85,9 @@ block content
       .card.mb-3
         img.card-img-top.img-fluid(src='images/bigmouthbubbler.png')
         .card-block
-          h4.card-title Big Mouth Bubbler®
+          h5.card-title Big Mouth Bubbler®
           h6.card-subtitle.mb-2.text-muted WordPress
-          ul
+          ul.list-unstyled
             li Audit
             li PHP, HTML &amp CSS
             li Search Engine Optimization
@@ -95,9 +95,9 @@ block content
       .card.mb-3
         img.card-img-top.img-fluid(src='images/discountfilterstore.png')
         .card-block
-          h4.card-title DiscountFilterStore
+          h5.card-title DiscountFilterStore
           h6.card-subtitle.mb-2.text-muted Magento
-          ul
+          ul.list-unstyled
             li User Experience
             li Multivariate Testing
             li HTML &amp; CSS
@@ -107,9 +107,9 @@ block content
       .card.mb-3
         img.card-img-top.img-fluid(src='images/mitchellakerfarmers.png')
         .card-block
-          h4.card-title Mitchell Aker &ndash; Farmers Insurance Agent
+          h5.card-title Mitchell Aker &ndash; Farmers Insurance Agent
           h6.card-subtitle.mb-2.text-muted Pug
-          ul
+          ul.list-unstyled
             li Bootstrap
             li HTML &amp; CSS
             li Hosting
@@ -117,9 +117,9 @@ block content
       .card.mb-3
         img.card-img-top.img-fluid(src='images/mspmag-blogs.png')
         .card-block
-          h4.card-title Mpls.St.Paul Magazine Blogs
+          h5.card-title Mpls.St.Paul Magazine Blogs
           h6.card-subtitle.mb-2.text-muted Kentico &amp; WordPress
-          ul
+          ul.list-unstyled
             li Design
             li CMS Integration
             li PHP
@@ -127,18 +127,18 @@ block content
       .card.mb-3
         img.card-img-top.img-fluid(src='images/intermixbev.png')
         .card-block
-          h4.card-title Intermix Beverage
+          h5.card-title Intermix Beverage
           h6.card-subtitle.mb-2.text-muted WordPress
-          ul
+          ul.list-unstyled
             li Design
             li PHP, HTML &amp; CSS
           a.card-link(href='http://intermixbev.com/' target='_blank') Visit site
       .card.mb-3
         img.card-img-top.img-fluid(src='images/secretsofthecity.png')
         .card-block
-          h4.card-title Secrets of the City
+          h5.card-title Secrets of the City
           h6.card-subtitle.mb-2.text-muted WordPress
-          ul
+          ul.list-unstyled
             li PHP, HTML &amp; CSS
           a.card-link(href='http://www.secretsofthecity.com/' target='_blank') Visit site
       //- 808 Loud
@@ -147,21 +147,20 @@ block content
           McKesson Better Thinking for Better Health
           Haldeman-Homme, Inc. | HH Best Lab
 
-  section#about.my-5.py-3
+  section#about.my-5
     h2.display-4 About me
-    .container
-      .row
-        .col-xs-1.mr-3.display-1.font-family-serif.wow.flipInY(data-wow-offset='150')
-          | I
-        .col-xs-11
-          ul.list-unstyled
-            li loathe gradients
-            li endorse open source
-            li prefer the DIY approach
-            li occasionally dream in code
+    .row
+      .col-2.wow.flipInY(data-wow-offset='100' data-wow-duration='5s')
+        img(src='images/roman-i.svg' width='100%' height='auto')
+      .col-10
+        ul.list-unstyled.list-unstyled
+          li loathe gradients
+          li endorse open source
+          li prefer the DIY approach
+          li occasionally dream in code
 
 
-  section#contact.my-5.py-3
+  section#contact.my-5
     h2.display-4 Contact me
     form(action='https://formspree.io/david@808loud.com' method='POST')
       .form-group
@@ -176,8 +175,7 @@ block content
       input(type='text', name='_gotcha', style='display:none')
       .form-group
         button.btn.btn-primary(type="submit") Submit
-
-    .mt-5.pt-5.wow.fadeInUp
+    .mt-5.wow.fadeInUp
       blockquote.blockquote
         p.text-nowrap
           | Everything should be made as simple as possible, but not simpler.
