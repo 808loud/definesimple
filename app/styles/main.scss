@@ -1,30 +1,53 @@
-@import "custom";
+@import "bootstrap";
+
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
-blockquote {
-  transition: all 0.2s ease-in-out;
+* {
+  transition: all 0.3s ease-in-out;
+}
 
+body {
+  position: relative;
+}
+
+.navbar.shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+blockquote {
   &:hover {
-    border-color: #d0e8f4;
+    border-color: darken(saturate($blockquote-border-color, 50%), 10%);
   }
+}
+
+.card {
+  // transform: scale(0.99);
+  // &:hover {
+  //   transform: scale(1);
+  // }
 }
 
 .font-family-serif {
   font-family: $font-family-serif;
 }
 
-.card {
-  max-width: 20rem;
+#about ul {
+  line-height: 1.2em;
+  position: relative;
+  top: 0.9em;
 }
-
 
 // Responsive sizes
 
 @include media-breakpoint-up(xs) {
   html {
     font-size: $font-size-xs;
+  }
+  .card-columns {
+    column-count: 1;
   }
 }
 
@@ -38,10 +61,16 @@ blockquote {
   html {
     font-size: $font-size-base;
   }
+  .card-columns {
+    column-count: 2;
+  }
 }
 
 @include media-breakpoint-up(lg) {
   html {
     font-size: $font-size-lg;
+  }
+  .card-columns {
+    column-count: 3;
   }
 }
