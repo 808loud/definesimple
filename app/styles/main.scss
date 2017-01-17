@@ -1,0 +1,81 @@
+@import "bootstrap";
+
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.navbar {
+  transition: padding 0.3s ease-in-out;
+  &.shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+blockquote {
+  transition: border-color 0.3s ease-in-out;
+  &:hover {
+    border-color: darken(saturate($blockquote-border-color, 50%), 10%);
+  }
+}
+
+.card {
+  transform: scale(0.99);
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+#about ul {
+  line-height: 1.2em;
+  position: relative;
+  top: 0.9em;
+}
+
+.font-family-serif {
+  font-family: $font-family-serif;
+}
+
+// Responsive sizes
+
+@include media-breakpoint-up(xs) {
+  html {
+    font-size: $font-size-xs;
+  }
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: $font-size-sm;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: $font-size-base;
+  }
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: $font-size-lg;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .card-columns {
+    column-count: 3;
+  }
+}
