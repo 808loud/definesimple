@@ -2,5 +2,6 @@ node_modules
 dist
 .tmp
 .publish
+*.sketch
 bower_components
 test/bower_components
