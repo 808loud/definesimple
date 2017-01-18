@@ -18,9 +18,9 @@ block content
           br
           | &ndash; David Monson
 
-  section#portfolio.clearfix.py-3.wow.fadeInUp(data-wow-delay='5s')
-    h2.display-4 Portfolio
-    .card-columns
+  section#portfolio.py-3
+    h2.display-4.wow.fadeInUp(data-wow-delay='4s') Portfolio
+    .card-columns.wow.fadeIn(data-wow-delay='4.3s')
       .card.mb-3
         img.card-img-top.img-fluid(src='images/sis-newcase.png')
         .card-block
@@ -30,7 +30,6 @@ block content
             li Bootstrap
             li Material Design
             li HTML &amp; CSS
-          a.btn.btn-secondary(href='#' target='_blank') Visit site
       .card.mb-3
         img.card-img-top.img-fluid(src='images/homesforheroes.png')
         .card-block
@@ -39,10 +38,10 @@ block content
           ul.list-unstyled
             li Audit
             li Design
-            li PHP, HTML &amp CSS
+            li PHP, HTML &amp; CSS
             li A/B Testing
             li Search Engine Optimization
-          a.btn.btn-secondary(href='http://homesforheroes.com/' target='_blank') Visit site
+          a.btn.btn-secondary(href='https://www.homesforheroes.com/' target='_blank') Visit site
       .card.mb-3
         img.card-img-top.img-fluid(src='images/chrlieco.png')
         .card-block
@@ -62,7 +61,7 @@ block content
             li Feature Design
             li Development
             li Email Marketing
-          a.btn.btn-secondary(href='http://bringmethenews.com/' target='_blank') Visit site
+          a.btn.btn-secondary(href='http://www.gomn.com/news/' target='_blank') Now GoMN
       .card.mb-3
         img.card-img-top.img-fluid(src='images/northernbrewer.png')
         .card-block
@@ -72,7 +71,7 @@ block content
             li CMS maintainence
             li HTML &amp; CSS
             li Digital Marketing
-          a.btn.btn-secondary(href='http://northernbrewer.com/' target='_blank') Visit site
+          a.btn.btn-secondary(href='http://www.northernbrewer.com/' target='_blank') Visit site
       .card.mb-3
         img.card-img-top.img-fluid(src='images/midwestsupplies.png')
         .card-block
@@ -82,7 +81,7 @@ block content
             li CMS maintainence
             li HTML &amp; CSS
             li Digital Marketing
-          a.btn.btn-secondary(href='http://midwestsupplies.com/' target='_blank') Visit site
+          a.btn.btn-secondary(href='https://www.midwestsupplies.com/' target='_blank') Visit site
       .card.mb-3
         img.card-img-top.img-fluid(src='images/bigmouthbubbler.png')
         .card-block
@@ -90,7 +89,7 @@ block content
           h6.card-subtitle.mb-1.text-muted WordPress
           ul.list-unstyled
             li Audit
-            li PHP, HTML &amp CSS
+            li PHP, HTML &amp; CSS
             li Search Engine Optimization
           a.btn.btn-secondary(href='http://bigmouthbubbler.com/' target='_blank') Visit site
       .card.mb-3
@@ -104,17 +103,17 @@ block content
             li HTML &amp; CSS
             li jQuery
             li CMS maintainence
-          a.btn.btn-secondary(href='http://discountfilterstore.com/' target='_blank') Visit site
+          a.btn.btn-secondary(href='http://www.discountfilterstore.com/' target='_blank') Visit site
       .card.mb-3
         img.card-img-top.img-fluid(src='images/mitchellakerfarmers.png')
         .card-block
-          h5.card-title Mitchell Aker &ndash; Farmers Insurance Agent
+          h5.card-title Mitchell Aker &ndash; Farmers Insurance
           h6.card-subtitle.mb-1.text-muted Pug
           ul.list-unstyled
             li Bootstrap
             li HTML &amp; CSS
             li Hosting
-          a.btn.btn-secondary(href='http://bringmethenews.com/' target='_blank') Visit site
+          a.btn.btn-secondary(href='http://mitchellakerfarmers.com/' target='_blank') Visit site
       .card.mb-3
         img.card-img-top.img-fluid(src='images/mspmag-blogs.png')
         .card-block
@@ -150,33 +149,70 @@ block content
 
   section#about.py-3
     h2.display-4 About me
-    .row
+    .row.py-3
       .col-2.wow.flipInY(data-wow-offset='180' data-wow-duration='3s')
         img(src='images/roman-i.svg' width='100%' height='auto')
       .col-10
-        ul.list-unstyled.list-unstyled
+        ul.list-unstyled
           li loathe gradients
           li endorse open source
           li overindulge with emojis
           li occasionally dream in code
           li usually prefer the DIY approach
+    .row
+      .col-md-3.wow.fadeInRight(data-wow-delay='0s')
+        h4 Skills
+        ul.list-unstyled
+          li Web Development
+          li Web Design
+          li User Experience
+          li A/B Testing
+          li Website Audits
+          li Digital Marketing
+      .col-md-3.wow.fadeInRight(data-wow-delay='0.2s')
+        h4 Languages
+        ul.list-unstyled
+          li HTML5
+          li CSS3
+          li Sass
+          li jQuery
+          li JavaScript
+          li PHP
+      .col-md-3.wow.fadeInRight(data-wow-delay='0.4s')
+        h4 Systems
+        ul.list-unstyled
+          li Bootstrap
+          li WordPress
+          li Magento
+          li Pug
+          li Nunjucks
+          li Handlebars
+      .col-md-3.wow.fadeInRight(data-wow-delay='0.6s')
+        h4 Tools
+        ul.list-unstyled
+          li Photoshop
+          li Illustrator
+          li Sketch
+          li Gulp
+          li Bower
+          li Atom
 
   section#contact.py-3
-    h2.display-4 Contact me
+    h2.display-4.wow.fadeIn Contact me
     form(action='https://formspree.io/david@808loud.com' method='POST')
-      .form-group
+      .form-group.wow.fadeInX(data-wow-delay='0s')
         label.sr-only(for='name') Name
         input.form-control(type='text' name='name' placeholder='Name')
-      .form-group
+      .form-group.wow.fadeInX(data-wow-delay='0.2s')
         label.sr-only(for='email') Email address
         input.form-control(type='email' name='_replyto' placeholder='Email address')
-      .form-group
+      .form-group.wow.fadeInX(data-wow-delay='0.4s')
         label.sr-only(for='message') Message
         textarea.form-control(rows='5' name='message' placeholder='Message')
       input(type='text', name='_gotcha', style='display:none')
-      .form-group
+      .form-group.wow.fadeInX(data-wow-delay='0.6s')
         button.btn.btn-primary(type="submit") Submit
-    blockquote.blockquote.mt-3.wow.fadeInUp
+    blockquote.blockquote.mt-3.wow.fadeIn(data-wow-delay='1s')
       p
         | Everything should be made as simple as possible, but not simpler.
         br
