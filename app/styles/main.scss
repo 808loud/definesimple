@@ -5,15 +5,12 @@
 // endbower
 
 body {
-  position: relative;
-  overflow-x: hidden;
+  // position: relative; // scrollspy
+  overflow-x: hidden; // wow.js
 }
 
-blockquote {
-  transition: border-color 0.3s ease-in-out;
-  &:hover {
-    border-color: darken(saturate($blockquote-border-color, 50%), 10%);
-  }
+.wow {
+  visibility: hidden;
 }
 
 .card {
@@ -26,6 +23,12 @@ svg {
   fill: $brand-primary;
 }
 
+blockquote {
+  transition: border-color 0.3s ease-in-out;
+  &:hover {
+    border-color: darken(saturate($blockquote-border-color, 50%), 10%);
+  }
+}
 
 button,
 input,
@@ -35,8 +38,7 @@ textarea {
   font-family: $font-family-base;
 }
 
-// Responsive sizes
-
+// Responsive tweaks
 @include media-breakpoint-up(xs) {
   html {
     font-size: $font-size-xs;
@@ -59,13 +61,13 @@ textarea {
   .card-columns {
     column-count: 2;
   }
-  .navbar {
-    transition: padding 0.3s ease-in-out;
-    &.shrink {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  }
+  // .navbar {
+  //   transition: padding 0.3s ease-in-out;
+  //   &.shrink {
+  //     padding-top: 0;
+  //     padding-bottom: 0;
+  //   }
+  // }
 }
 
 @include media-breakpoint-up(lg) {
