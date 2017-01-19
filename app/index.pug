@@ -30,6 +30,7 @@ block content
             li Bootstrap
             li Material Design
             li HTML &amp; CSS
+          a.btn.btn-secondary.disabled(disabled='') Site launch pending
       .card.mb-3
         img.card-img-top.img-fluid(src='images/homesforheroes.png')
         .card-block
@@ -199,7 +200,7 @@ block content
 
   section#contact.py-3
     h2.display-4.wow.fadeIn Contact me
-    form(data-wow-delay='1.2s')(action='https://formspree.io/david@808loud.com' method='POST')
+    form(action='https://formspree.io/david@808loud.com' method='POST')
       .form-group.wow.flipInX(data-wow-delay='0.4s')
         label.sr-only(for='name') Name
         input.form-control(type='text' name='name' placeholder='Name')
