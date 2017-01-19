@@ -19,8 +19,8 @@ block content
           | &ndash; David Monson
 
   section#portfolio.py-3
-    h2.display-4.wow.fadeInUp(data-wow-delay='4s') Portfolio
-    .card-columns.wow.fadeIn(data-wow-delay='4.3s')
+    h2.display-4.wow.fadeInUp(data-wow-delay='4s' data-wow-offset='-1000') Portfolio
+    .card-columns.wow.fadeIn(data-wow-delay='4.3s' data-wow-offset='-1000')
       .card.mb-3
         img.card-img-top.img-fluid(src='images/sis-newcase.png')
         .card-block
@@ -199,20 +199,20 @@ block content
 
   section#contact.py-3
     h2.display-4.wow.fadeIn Contact me
-    form(action='https://formspree.io/david@808loud.com' method='POST')
-      .form-group.wow.fadeInX(data-wow-delay='0s')
+    form(data-wow-delay='1.2s')(action='https://formspree.io/david@808loud.com' method='POST')
+      .form-group.wow.flipInX(data-wow-delay='0.4s')
         label.sr-only(for='name') Name
         input.form-control(type='text' name='name' placeholder='Name')
-      .form-group.wow.fadeInX(data-wow-delay='0.2s')
+      .form-group.wow.flipInX(data-wow-delay='0.8s')
         label.sr-only(for='email') Email address
         input.form-control(type='email' name='_replyto' placeholder='Email address')
-      .form-group.wow.fadeInX(data-wow-delay='0.4s')
+      .form-group.wow.flipInX(data-wow-delay='1.2s')
         label.sr-only(for='message') Message
         textarea.form-control(rows='5' name='message' placeholder='Message')
       input(type='text', name='_gotcha', style='display:none')
-      .form-group.wow.fadeInX(data-wow-delay='0.6s')
+      .form-group.wow.fadeIn(data-wow-delay='2s')
         button.btn.btn-primary(type="submit") Submit
-    blockquote.blockquote.mt-3.wow.fadeIn(data-wow-delay='1s')
+    blockquote.blockquote.mt-3.wow.fadeIn(data-wow-delay='2.4s')
       p
         | Everything should be made as simple as possible, but not simpler.
         br
