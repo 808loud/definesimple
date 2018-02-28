@@ -1,6 +1,6 @@
 new WOW({ live: false }).init();
 
-$('body').scrollspy({ target: '.navbar' })
+// $('body').scrollspy({ target: '.navbar' })
 
 $(window).scroll(function() {
   if ($(document).scrollTop() > 1) {

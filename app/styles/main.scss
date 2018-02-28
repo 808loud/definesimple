@@ -1,8 +1,6 @@
-@import "bootstrap";
+// @import "bootstrap";
 
-// bower:scss
-@import "bower_components/bootstrap/scss/bootstrap.scss";
-// endbower
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
   // position: relative; // scrollspy
@@ -20,13 +18,13 @@ body {
 }
 
 svg {
-  fill: $brand-primary;
+  fill: theme-color('primary');
 }
 
 blockquote {
   transition: border-color 0.3s ease-in-out;
   &:hover {
-    border-color: darken(saturate($blockquote-border-color, 50%), 10%);
+    // border-color: darken(saturate($blockquote-border-color, 50%), 10%);
   }
 }
 
@@ -41,7 +39,7 @@ textarea {
 // Responsive tweaks
 @include media-breakpoint-up(xs) {
   html {
-    font-size: $font-size-xs;
+    font-size: $font-size-sm;
   }
   .card-columns {
     column-count: 1;
@@ -49,9 +47,9 @@ textarea {
 }
 
 @include media-breakpoint-up(sm) {
-  html {
-    font-size: $font-size-sm;
-  }
+  // html {
+  //   font-size: $font-size-sm;
+  // }
 }
 
 @include media-breakpoint-up(md) {

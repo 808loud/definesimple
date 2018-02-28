@@ -5,13 +5,11 @@ html.no-js(lang='')
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title David Monson's Portfolio
-
+    
     link(href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet')
 
     // build:css styles/vendor.css
-    // bower:css
-    link(rel='stylesheet' href='/bower_components/animate.css/animate.min.css')
-    // endbower
+    link(rel='stylesheet' href='/node_modules/animate.css/animate.css')
     // endbuild
 
     // build:css styles/main.css
@@ -38,7 +36,6 @@ html.no-js(lang='')
           li.nav-item
             a.nav-link(href='#contact') Contact
 
-
     main.container
       block content
 
@@ -50,23 +47,16 @@ html.no-js(lang='')
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-75122415-2');ga('send','pageview');
 
-    // build:js scripts/vendor.js
-    // bower:js
-    //- script(src='/bower_components/jquery/dist/jquery.js')
-    //- script(src='/bower_components/modernizr/modernizr.js')
-    // endbower
-    // endbuild
+    // build:js scripts/vendor.js 
+    //- script(src='/node_modules/jquery/dist/jquery.js')
+    //- script(src='/node_modules/modernizr/modernizr.js')
+    script(src='/node_modules/jquery/dist/jquery.js')
+    script(src='/node_modules/wowjs/dist/wow.js')
+    //- script(src='/node_modules/bootstrap/js/dist/util.js')
+    //- script(src='/node_modules/bootstrap/js/dist/collapse.js')
+    //- script(src='/node_modules/bootstrap/js/dist/scrollspy.js')
+    // endbuild 
 
-    // build:js scripts/plugins.js
-    // bower:js
-    script(src='/bower_components/jquery/dist/jquery.min.js')
-    script(src='/bower_components/wow/dist/wow.min.js')
-    //- script(src='/bower_components/bootstrap/js/dist/util.js')
-    //- script(src='/bower_components/bootstrap/js/dist/collapse.js')
-    //- script(src='/bower_components/bootstrap/js/dist/scrollspy.js')
-    // endbower
-    // endbuild
-
-    // build:js scripts/main.js
+    // build:js scripts/main.js 
     script(src='scripts/main.js')
-    // endbuild
+    // endbuild 
