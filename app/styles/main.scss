@@ -11,6 +11,10 @@ body {
   visibility: hidden;
 }
 
+section {
+  padding: ($spacer * 3) 0;
+}
+
 .card {
   ul {
     font-size: 0.85em;
