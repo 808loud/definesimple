@@ -41,14 +41,6 @@ blockquote {
   }
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: $font-family-base;
-}
-
 // Responsive tweaks
 @include media-breakpoint-up(xs) {
   html {
