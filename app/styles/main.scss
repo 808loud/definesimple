@@ -33,9 +33,11 @@ svg {
 }
 
 blockquote {
+  border-left: ($spacer * 0.5) solid theme-color('primary');
+  padding-left: 1rem;
   transition: border-color 0.3s ease-in-out;
   &:hover {
-    // border-color: darken(saturate($blockquote-border-color, 50%), 10%);
+    border-color: darken(theme-color('primary'), 10%);
   }
 }
 
