@@ -1,5 +1,10 @@
-// @import "bootstrap";
+// import Bootstrap functions
+@import "node_modules/bootstrap/scss/_functions.scss";
 
+// load customized variable values
+@import "bootstrap";
+
+// compile Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
